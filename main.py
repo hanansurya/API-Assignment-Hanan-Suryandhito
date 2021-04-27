@@ -8,7 +8,7 @@ import pandas as pd
 from fastapi import FastAPI
 
 app = FastAPI()
-vehicle = pd.read_csv(r'https://data.go.id/dataset/data-pertambahan-jumlah-kendaraan-wilayah-jakarta-depok-tangerang-dan-bekasi/341f93f4-69f4-45b3-a8cb-3dbc4b5f7ce7/download')
+vehicle = pd.read_csv(r'pertambahan-jumlah-kendaraan-bermotor-7-tahun-terakhir-2008-2014-wilayah-jakarta-depok-tangerang-bekasi.csv')
 vhcl = pd.DataFrame(vehicle)
 
 @app.get('/')
